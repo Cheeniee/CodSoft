@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Poulomi's Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/dfe025e877.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+    <div class="container">
+    <nav>
+        <img src="images/Logo.png" class="Logo">
+        <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact me</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+        </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+    </nav>
+    <div class="header-text">
+        <p>Computer Science Student</p>
+        <h1>Welcome to my portfolio! <br> I'm <span> Poulomi Halder</span>, from Kolkata. <br> Dive into my tech journey.</h1>
+    </div>
+</div>
+</div>
+<!----------------About---------------->
+<div id="About">
+    <div class="container">
+        <div class="row">
+            <div class="About-col-1">
+                <img src="images/About.png">
+            </div>
+            <div class="About-col-2">
+                <h1 class="sub-title">About me</h1>
+                <p class="about-me">Hello! I'm a final-year Computer Science student, deeply enthusiastic about technology and adept at tackling complex challenges. Among my notable achievements is the successful development of a Hospital Management System utilizing Python Django. <br><br>
+
+                    In the realm of freelancing, I've demonstrated my prowess in various domains, excelling particularly in data entry and crafting engaging content. I boast proficiency in a diverse array of technical skills and spanning MS-Office. <br><br>
+                    
+                    Beyond my technical prowess, I also possess a valuable set of soft skills, including adaptability, problem-solving acumen, a flair for creativity, and impeccable time management.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('certificates')">Certificates</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                <ul>
+                    <li><span>Programming Languages:</span><br>Proficient in Python, Java, C++.
+                    <li><span>Web Development:</span><br>Familiar with HTML, CSS, JavaScript.
+                    <li><span>Database Management System:</span><br>Knowledge of Oracle, MySQL.
+                    <li><span>Relevant Courses:</span><br>OOPs, Software Engineering,<br>DSA and Operating System.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="certificates">
+                <ul>
+                    <li><span>PYTHON:</span><br>The Python Bootcamp by Jose Portilla.
+                    <li><span>SQL:</span><br>Structured Query Language -SQL by Skill Nation.
+                    <li><span>JAVA</span><br>Java Programming Masterclass by Tim Buchalka.
+                    <li><span>HTML & CSS:</span><br>Build Responsive Real World Websites <br>with HTML & CSS by Jonas Schmedtman.</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Academic Year: 2020 - Present:</span><br>B.Tech in Computer Science & Engineering.<br>Maulana Abul Kalam Azad University Of Technology (MAKAUT).
+                    <li><span>Academic Year: 2020</span><br>Senior Secondary Examination.<br>National Institute Of Open Schooling (NIOS).</li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!----------------Portfolio---------------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                <h3>Hospital Management System</h3>
+                <p>A Python Django Hospital Management System automates and streamlines hospital operations. Using Python and Django's capabilities, it manages patient records, appointments, billing, and more, ensuring efficiency and data security in healthcare facilities.</p>
+                <a href="https://github.com/Cheeniee/Hospital_Management_System.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Amazon Clone</h3>
+                    <p>Showcased HTML and CSS expertise, capturing the essence of Amazon's aesthetic and user-friendly layouts.</p>
+                    <a href="https://github.com/Cheeniee/Amazon-Project.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-3.png">
+                <div class="layer">
+                    <h3>Quote-Generator</h3>
+                    <p>A Quote Generator, made with HTML, CSS, and JavaScript, instantly provides random quotes for users, offering inspiration and reflection with a click.</p>
+                    <a href="https://github.com/Cheeniee/Quote-Generator.git"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!----------------Contact---------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> poulomi.halderr@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i></i> 9875422386</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100081834819030"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/ohh_so_cheenie/?next=%2F&hl=en"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/poulomi-halder-048578282/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://twitter.com/Cheeeniiiiii"><i class="fa-brands fa-x-twitter"></i></a>
+                </div>
+                <a href="images/Poulomi's CV.pdf" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>      
+                    <span id="msg"></span>          
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © by Poulomi.</p>
+    </div>
+</div>
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemenu.style.right="0";
+    }
+    function closemenu(){
+        sidemenu.style.right="-200px";
+    }
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxZXSWIgdoVLhcXUG6SFiewibk7kTNq4Syl_GeJbaUiKFADFnJDiJpI2YabMeB-9W8LWQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML =""
+            },5000)
+            form.reset
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
